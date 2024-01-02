@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/af236d1390.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                <img src="images/logo.png" class="log">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>Hi, I'm <span>Anusha S</span><br> From India</h1>
+                </div>
+            </div>
+        </div>
+<!---------------------about----------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a recent MCA graduate with a passion for developing innovative and efficient software solutions.
+                       Eager to contribute my technical skills and knowledge to a dynamic team. Apart from my technical skills,
+                       I am a quick learner with strong analytical mindset. My strengths are a self-motivated and hardworking person 
+                       towards my career and my life. My weakness is - I am very emotional and I'm working on it to be better version
+                       of myself. I have a couple of hobbies listening to music and cooking.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('learning and certification')">Learning and Certification</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    <li><span>Database</span><br>MySQL</li>
+                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                </ul>
+            </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br> MCA from RRCE Bangalore </li>
+                        <li><span>2021</span><br>BCA from RNS FGC Bangalore</li>
+                        <li><span>2018</span><br>Jnanodaya PU college</li>
+                        <li><span>2016</span><br>St Lawrence English School</li>
+                    </ul>
+                </div>
+                    <div class="tab-contents" id="learning and certification">
+                        <ul>
+                            <li><span>2023</span><br> Java 17 Masterclass- Udemy Course</li>
+                            <li><span>2021</span><br>ML, Data Science and Generative AI with Python- Udemy Course</li>
+                            <li><span>2021</span><br>Core and Advanced Java from Glovish Technologies</li>
+                            <li><span>2020</span><br>VB.net, ASP.net Course from Glovish Technologies</li>
+                            <li><span>2020</span><br>National Conference paper title - Application of AI</li>
+                            <li><span>2019</span><br>Python Course from Glovish Technologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------Projects-------------------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My project</h1>
+        <div class="projects-list">
+        <div>
+            <i class="fa-solid fa-comments"></i>
+            <h1>Toxic Speech Classification Using ML</h1>
+        <p>In today's era of online social media platforms, there has been a massive surge in the propagation 
+            of toxic content speech. They provide many betterments.</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+        <i class="fa-brands fa-twitter"></i>
+        <h2>Twitter Based Tweet Summarization</h2>
+        <p>Short-text messages such as tweets are being created and shared at unprecedented rate.
+            Tweets, in their form, while being informative, can also overwhelming. We used PHP
+            as a fronted. MySQL was used for the database operations.</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+        <i class="fa-solid fa-house-signal"></i>
+        <h2>Smart Home Security System Using IOT</h2>
+        <p>
+            Now Technology has spread in every field of our lives. In present era, everybody is having some 
+            kind of connectivity with technology whether in form of mobile, laptop or others.Here we 
+            are going to discuss the use of technology in field of home security.</p>
+        <a href="#">Learn more</a>
+    </div>
+</div>
+</div>
+</div>
+<!-----------------------contact----------------------------->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>anushasuresh912@gmail.com</p>
+
+            <p><i class="fa-solid fa-square-phone"></i>6362693661</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/anusha._.sureshh?igsh=bHg1ZmVraG54Ymt1"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@anusha._.sureshh"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/anusha-sureshh"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/resume anusha.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6"  placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+<p>Copyright @Anusha. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+</div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdW2X5dT0gl7ICBJ8hLS0Zh8oFTNXw5mpTENqMwtp-h1t4nOLV5gLeFVIkdp-JiwFRaw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
